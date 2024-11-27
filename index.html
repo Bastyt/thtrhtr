@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get to know Top Headlines</title>
-        <style>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <title>Top Headlines</title>
+    <style>
         * {
             box-sizing: border-box;
             margin: 0;
@@ -161,59 +162,42 @@
         }
 
     </style>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
-    <header>
-        <h1>Get to know Top Headlines</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="articles.html">Articles</a></li> <!-- Link to Articles Page -->
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <img src="logo.png" alt="Logo"> 
+        <h1>Top Headlines</h1>
     </header>
-
-    <main>
-        <section>
-            <h2>About our website</h2>
-            <p>
-                The primary aim of this website is to highlight the challenges faced by Indigenous women and children, 
-                who often encounter exploitation and barriers to justice. The issues discussed in Kapalit ng Katahimikan 
-                underscore the entrenched difficulties related to abuse, poverty, and lack of community support, which 
-                perpetuate a cycle of suffering and trauma. Teenage pregnancy, frequently stemming from abuse or inadequate 
-                access to reproductive health resources, complicates the lives of young women by affecting their education, 
-                economic prospects, and social reputation.
-            </p>
+    <nav class="nav">
+        <ul>
+            <li><a class="nav-active" href="#">Home</a></li> 
+             <li><a href="articles.html">Content</a></li> <!-- Link to Articles Page -->
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="search-section">
+            <input type="text" class="search-input" placeholder="Search...">
+            <button class="search-button">Search</button>
+        </div>
+    </nav>
+    <main class="main">
+        <section class="content">
+            <h1>Get to know Top Headlines</h1>
+            <div class="article">
+                <h3>About our website</h3>
+                <p>The primary aim of this website is to highlight the challenges faced by Indigenous women and children, who often encounter exploitation and barriers to justice. The issues discussed in Kapalit ng Katahimikan underscore the entrenched difficulties related to abuse, poverty, and lack of community support, which perpetuate a cycle of suffering and trauma. Teenage pregnancy, frequently stemming from abuse or inadequate access to reproductive health resources, complicates the lives of young women by affecting their education, economic prospects, and social reputation.</p>
+				<h3>About our article</h3>
+                <div class="flex-container">
+                    <p>The repercussions of teenage pregnancy can be significant and long-lasting for young mothers, who frequently experience disruptions in their education, reduced economic opportunities, and societal stigma. For many Indigenous girls, these obstacles are even more pronounced due to their limited access to reproductive health education, support networks, and healthcare services. By offering news articles, resources, and educational material, our goal is to raise awareness about these issues and engage in discussions about the ongoing initiatives to aid victims, advocate for justice, and lower the rates of teenage pregnancy. Through raising consciousness, we seek to help establish a safer and more supportive community for everyone.</p>
+                    <img class="right-image" src="picture1.jpg" alt="Description of the second image"> 
+                </div>
+            </div>
+        <a href="articles.html">Browse more articles</a> <!-- Link to the Articles Page -->
         </section>
-
-        <section>
-            <h2>About our article</h2>
-            <p>
-                The repercussions of teenage pregnancy can be significant and long-lasting for young mothers, who frequently 
-                experience disruptions in their education, reduced economic opportunities, and societal stigma. For many 
-                Indigenous girls, these obstacles are even more pronounced due to their limited access to reproductive health 
-                education, support networks, and healthcare services. By offering news articles, resources, and educational 
-                material, our goal is to raise awareness about these issues and engage in discussions about the ongoing 
-                initiatives to aid victims, advocate for justice, and lower the rates of teenage pregnancy. Through raising 
-                consciousness, we seek to help establish a safer and more supportive community for everyone.
-            </p>
-            <a href="articles.html">Browse more articles</a> <!-- Link to the Articles Page -->
-        </section>
-
-        <section>
-            <h2>Featured Video</h2>
-            <p>Watch the full episode of "Kapalit ng Katahimikan" documentary by Kara David.</p>
-            <a href="https://youtu.be/qgzEyzADgAk?si=3HEzgu0Mkq1j21zx" target="_blank">
-                <img src="images/kidnapping.jpg" alt="Kapalit ng Katahimikan Documentary" style="width:100%; max-width:600px;">
-            </a>
-        </section>
+        <section class="sidebar">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id mattis augue.</section> 
     </main>
-
     <footer>
-        <p>&copy; 2024 Top Headlines</p>
+        <p>&copy; 2024 Top Headlines. All rights reserved.</p>
     </footer>
 </body>
-</html>
+</html>   
